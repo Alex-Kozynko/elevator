@@ -9,3 +9,9 @@
     src: url('Fontfabric - MullerExtraBold.otf');
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'MullerRegular';
+    src: url('Fontfabric - MullerRegular.otf');
+    font-style: normal;
+}

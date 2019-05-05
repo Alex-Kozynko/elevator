@@ -48,6 +48,8 @@ header {
 			}
 		}
 		.left {
+			margin-top: 120px;
+			position: relative;
 			.title {
 				color: #fff;
 				font-size: $a30;
@@ -58,34 +60,67 @@ header {
 				color: #fff;
 				font-family: 'MullerExtraBold';
 				text-transform: uppercase;
-				line-height: #a60;
+				line-height: $a60;
+				margin-top: $a20;
 				.bg1 {
 					background: #0876b8;
 					box-shadow: 0px $a3 $a16 0px rgba(0, 4, 2, 0.35);
 					border-radius: $a3;
+					position: relative;
+					z-index: 2;
+					padding: $a20 $a103 $a16 $a23;
+					display: flex;
+					margin-bottom: -$a45;
 				}
 
 				.bg2 {
+					position: relative;
+					z-index: 1;
 					border-radius: $a3;
   					background-color: rgb(3, 125, 198);
   					opacity: 0.902;
+  					padding: $a5 $a57 0 $a23;
   					box-shadow: 0px $a3 $a16 0px rgba(0, 4, 2, 0.35);
 				}
+			}
+			.text {
+				font-size: $a42;
+				line-height: $a60;
+				color: #fff;
+				text-transform: uppercase;
+				font-family: 'MullerRegular';
+				padding: $a15 $a38 $a5 $a23;
+				border-radius: 3px;
+				opacity: 0.8;
+				background: #0b6ba6;
+				position: absolute;
+				top: $a225;
+			}
+		}
+		.right {
+			padding: $a20 $a10 $a30 $a10;
+			display: flex;
+			flex-direction: column;
+			// justify-content: center;
+			align-items: center;
+			border: $a5 solid #fff;
+			h3 {
+				font-size: $a24;
+				line-height: $a30;
+				color: #fff;
+				font-family: 'MullerExtraBold';
+				text-transform: uppercase;
+			}
+			p {
+				font-size: $a16;
+				line-height: $a24;
+				color: #e2e1e1;
+				text-transform: uppercase;
+				font-family: 'MullerExtraBold';
+				text-align: center;
 			}
 		}
 	}
 }
 
 
-.Прямоугольник__скругл__углы_1_копия {
-  border-radius: 3px;
-  background-color: rgb(3, 125, 198);
-  opacity: 0.902;
-  box-shadow: 0px 3px 16px 0px rgba(0, 4, 2, 0.35);
-  position: absolute;
-  left: 376px;
-  top: 351px;
-  width: 558px;
-  height: 78px;
-  z-index: 684;
-}
