@@ -6,8 +6,6 @@ header {
 	background: url(../img/header.png) no-repeat;
 	background-size: cover;
 	.container {
-		display: flex;
-		flex-flow: row wrap;
 		.wrapper {
 			width: 100%;
 			display: flex;
@@ -46,81 +44,121 @@ header {
 					font-family: 'MullerExtraBold';
 				}
 			}
-		}
-		.left {
-			margin-top: 120px;
-			position: relative;
-			.title {
-				color: #fff;
-				font-size: $a30;
-				font-family: 'MullerExtraBold';
-			}
-			h1 {
-				font-size: $a76;
-				color: #fff;
-				font-family: 'MullerExtraBold';
-				text-transform: uppercase;
-				line-height: $a60;
-				margin-top: $a20;
-				.bg1 {
-					background: #0876b8;
-					box-shadow: 0px $a3 $a16 0px rgba(0, 4, 2, 0.35);
-					border-radius: $a3;
-					position: relative;
-					z-index: 2;
-					padding: $a20 $a103 $a16 $a23;
+			.left {
+				margin-top: $a125;
+				display: flex;				
+				flex-direction: column;
+				align-items: flex-start;
+				.title {
+					font-size: $a30;
+					line-height: $a60;
+					color: #fff;
+					font-family: 'MullerExtraBold';
+				}
+				h1 {
 					display: flex;
-					margin-bottom: -$a45;
+					align-items: flex-start;
+					flex-direction: column;
+					.bg1, .bg2 {
+						font-size: $a76;
+						line-height: $a60;
+						color: #fff;
+						text-transform: uppercase;
+						font-family: 'MullerExtraBold';
+					}
+					.bg1 {
+						padding: $a21 $a120 $a13 $a22;
+						border-radius: $a3;
+						box-shadow: 0 $a3 $a16 0 rgba(0, 4, 2, 0.35);
+						position: relative;
+						z-index: 2;
+						background: #037dc6;
+					}
+					.bg2 {
+						position: relative;
+						z-index: 1;
+						background-color: rgba(3, 125, 198, 0.902);
+						border-radius: $a3;
+						box-shadow: 0 $a3 $a16 0 rgba(0, 4, 2, 0.35);
+						padding: $a20 $a55 $a5 $a22;
+					}
 				}
-
-				.bg2 {
-					position: relative;
-					z-index: 1;
-					border-radius: $a3;
-  					background-color: rgb(3, 125, 198);
-  					opacity: 0.902;
-  					padding: $a5 $a57 0 $a23;
-  					box-shadow: 0px $a3 $a16 0px rgba(0, 4, 2, 0.35);
+				.text {
+					background-color: rgba(3, 125, 198, 0.8);
+					color: #fff;
+					font-size: $a42;
+					line-height: $a60;
+					text-transform: uppercase;
+					font-family: 'MullerRegular';	
+					padding: $a16 $a34 $a5 $a22;
+					border-radius: $a3;			
+				}
+				.shit {
+					margin-top: $a40;
+					display: flex;
+					align-items: center;
+					.circle1 {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						padding: $a12;
+						border-radius: 50%;
+						border: 1px solid #283e5b;
+						margin-right: $a16;
+						img {
+							width: 100%;
+							border-radius: 50%;
+							background: #fff;
+							padding: $a11;
+						}
+					}
+					p {
+						font-size: $a24;
+						line-height: $a36;
+						color: #fff;
+						font-family: 'MullerRegular';
+					}
 				}
 			}
-			.text {
-				font-size: $a42;
-				line-height: $a60;
-				color: #fff;
-				text-transform: uppercase;
-				font-family: 'MullerRegular';
-				padding: $a15 $a38 $a5 $a23;
-				border-radius: 3px;
-				opacity: 0.8;
-				background: #0b6ba6;
-				position: absolute;
-				top: $a225;
-			}
-		}
-		.right {
-			padding: $a20 $a10 $a30 $a10;
-			display: flex;
-			flex-direction: column;
-			// justify-content: center;
-			align-items: center;
-			border: $a5 solid #fff;
-			h3 {
-				font-size: $a24;
-				line-height: $a30;
-				color: #fff;
-				font-family: 'MullerExtraBold';
-				text-transform: uppercase;
-			}
-			p {
-				font-size: $a16;
-				line-height: $a24;
-				color: #e2e1e1;
-				text-transform: uppercase;
-				font-family: 'MullerExtraBold';
-				text-align: center;
+			.right {
+				margin-top: $a90;
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				padding: $a20 $a30 $a30;
+				border: $a5 solid #fff;
+				border-radius: $a8;
+				h3 {
+					font-size: $a24;
+					line-height: $a30;
+					font-family: 'MullerExtraBold';
+					text-transform: uppercase;
+					color: #fff;
+					text-align: center;
+					white-space: pre-line;
+				}
+				p {
+					font-size: $a16;
+					color: #fff;
+					line-height: $a24;
+					font-family: 'MullerRegular';
+					white-space: pre-line;
+					text-align: center;
+				}
+				button {
+					width: 90%;
+					border: none;
+					text-transform: uppercase;
+					color: #fff;
+					background: #1eb33e;
+					font-family: 'MullerRegular';
+					margin-top: $a50;
+					padding: $a24 0;
+					border-radius: $a20;
+					cursor: pointer;
+					box-shadow: 0 $a3 $a5 0 rgba(32, 145, 56, 0.17);
+				}
 			}
 		}
 	}
 }
-
-
