@@ -317,38 +317,46 @@ main {
 			}
 		}
 	}
-	.picture {
+	.bg_linear {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		margin-top: -$a96;
 		height: $a886;
 		width: 100%;
 		background: url(../img/banner.png) no-repeat;
 		background-size: 100%;
-		.zebr {
-			position: relative;
-			margin-top: $a70;
-			img {
-				width: 100%;
-				position: relative;
-				z-index: 2;
+		.vertical_text {
+			h1 {
+				line-height: 0.93;
+			    writing-mode: tb-rl;
+   				transform:rotate(180deg);
+    			font-size: $a200;
+    			text-transform: uppercase;
+    			color: #fff;
+    			// font-family: 'UniNeue';
+    			font-family: 'MullerExtraBold';
 			}
-			.bg3 {
+		}
+		.lin_grad {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: $a15;
+			border-radius: $a7;
+			width: $a1032;
+			height: $a314;
+			background: repeating-linear-gradient(135deg, #0375ba 0, #0375ba $a26, #fff $a26, #fff $a52, #fff $a78);
+			.wrap_bg {
 				display: flex;
 				flex-direction: column;
-				align-items: center;
 				justify-content: center;
-				position: absolute;
-				top: $a50;
-				width: 89.5%;
-				left: $a60;
-				height: 70%;	
-				z-index: 1;
-				border-radius: $a6;
+				align-items: center;
+				width: $a966;
+				height: $a248;
 				background-color: rgb(255, 255, 255);
-				box-shadow: 0 $a24 $a49 0 rgba(0, 4, 2, 0.35);
-				h2 {
+  				box-shadow: inset 0 $a24 $a49 0 rgba(0, 4, 2, 0.35);
+  				h2 {
 					font-size: $a46;
 					line-height: $a36;
 					font-family: 'MullerExtraBold';
@@ -364,8 +372,13 @@ main {
 				}
 			}
 		}
+		.semicircle {
+			margin-right: -$a155;
+			width: $a195;
+			height: $a195;
+			border-radius: 50%;
+			background: #fff;
+		}
 	}
 } 
-
-
 

@@ -15,3 +15,9 @@
     src: url('Fontfabric - MullerRegular.otf');
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'UniNeue';
+    src: url('UniNeue-HeavyItalic.otf');
+    font-style: normal;
+}
