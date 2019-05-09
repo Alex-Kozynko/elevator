@@ -89,7 +89,19 @@ body {
   }
 }
 
+h2 {
+  font-size: $a46;
+  line-height: $a36;
+  font-family: 'MullerExtraBold';
+  text-transform: uppercase;
+  margin-bottom: $a50;
+}
+
 .container {
   width: $a1180;
   margin: 0 auto;
+}
+
+.abs1, .abs2, .abs3, .abs4, .abs5, .abs6, .abs7, .abs8 {
+  position: absolute;
 }

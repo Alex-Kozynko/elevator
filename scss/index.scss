@@ -6,11 +6,19 @@ header {
 	background: url(../img/header.png) no-repeat;
 	background-size: cover;
 	.container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		box-sizing: border-box;
+		padding-bottom: $a71;
 		.wrapper {
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			&:nth-child(2) {
+				margin: auto;
+			}
 			.logo {
 				display: flex;
 				justify-content: center;
@@ -45,7 +53,6 @@ header {
 				}
 			}
 			.left {
-				margin-top: $a170;
 				display: flex;				
 				flex-direction: column;
 				align-items: flex-start;
@@ -121,7 +128,6 @@ header {
 				}
 			}
 			.right {
-				margin-top: $a135;
 				align-items: center;
 				display: flex;
 				flex-direction: column;
@@ -197,7 +203,7 @@ main {
 						background: #ed1414;
 						border-radius: $a12;
 						width: $a300;
-						box-shadow: 0 $a19 $a5 0 rgba(45, 3, 3, 0.004);
+						box-shadow: 0 $a19 $a5 0 rgba(45, 3, 3, 0.6);
 						h3 {
 							text-align: center;
 							text-transform: uppercase;
@@ -297,7 +303,7 @@ main {
 					padding: $a15 0;
 					width: $a350;
 					background-color: rgb(237, 20, 20);
- 					box-shadow: 0 $a19 $a38 0 rgba(237, 20, 20, 0.004);
+ 					box-shadow: 0 $a19 $a38 0 rgba(237, 20, 20, 0.6);
 					h4 {
 						text-align: center;
 						text-transform: uppercase;
@@ -318,8 +324,9 @@ main {
 		}
 	}
 	.bg_linear {
+		position: relative;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		margin-top: -$a96;
 		height: $a886;
@@ -327,16 +334,19 @@ main {
 		background: url(../img/banner.png) no-repeat;
 		background-size: 100%;
 		.vertical_text {
-			h1 {
-				line-height: 0.93;
-			    writing-mode: tb-rl;
-   				transform:rotate(180deg);
-    			font-size: $a200;
-    			text-transform: uppercase;
-    			color: #fff;
-    			// font-family: 'UniNeue';
-    			font-family: 'MullerExtraBold';
-			}
+			left: 0;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+			position: absolute;
+			line-height: 0.7;
+		    writing-mode: vertical-lr;
+   			transform:rotate(180deg);
+   			font-size: $a240;
+   			white-space: nowrap;
+   			// text-transform: uppercase;
+    		color: #fff;
+    		font-family: 'UniNeue';
 		}
 		.lin_grad {
 			display: flex;
@@ -356,13 +366,6 @@ main {
 				height: $a248;
 				background-color: rgb(255, 255, 255);
   				box-shadow: inset 0 $a24 $a49 0 rgba(0, 4, 2, 0.35);
-  				h2 {
-					font-size: $a46;
-					line-height: $a36;
-					font-family: 'MullerExtraBold';
-					text-transform: uppercase;
-					margin-bottom: $a50;
-				}
 				p {
 					white-space: pre-line;
 					font-size: $a20;
@@ -373,6 +376,8 @@ main {
 			}
 		}
 		.semicircle {
+			position: absolute;
+			right: 0;
 			margin-right: -$a155;
 			width: $a195;
 			height: $a195;
@@ -380,5 +385,211 @@ main {
 			background: #fff;
 		}
 	}
+	.block_4 {
+		position: relative;
+		width: 100%;
+		.abs1 {
+			top: -$a65;
+			left: 0;
+			img {
+				width: $a286;
+			}
+		}
+		.abs2 {
+			top: $a150;
+			left: 0;
+			z-index: -3;
+			img {
+				width: $a680;
+			}
+		}
+		.abs3 {
+			top: $a250;
+			right: 0;
+			img {
+				width: $a269;
+			}
+		}
+		.abs4 {
+			right: 0;
+			top: $a620;
+			img {
+				width: $a294;
+			}
+		}
+		.abs5 {
+			right: 0;
+			z-index: -3;
+			top: $a822;
+			img {
+				width: $a1074;
+			}
+		}
+		.abs6 {
+			left: $a40;
+			top: $a1100;
+			z-index: -3;
+			img {
+				width: $a393;
+			}
+		}
+		.abs7 {
+			left: 0;
+			top: $a1400;
+			z-index: -3;
+			img {
+				width: $a547;
+			}
+		}
+		.abs8 {
+			right: 0;
+			top: $a1860;
+			img {
+				width: $a200;
+			}
+		}
+		.container {
+			padding-bottom: $a190;
+			.elevator {
+				width: 100%;
+				padding: $a110 0 $a40 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				h2 {
+					line-height: $a48;
+					margin-bottom: $a40;
+					text-align: center;
+				}
+				p {
+					font-size: $a36;
+					line-height: $a30;
+					font-family: 'MullerExtraBold';
+					color: #037dc6;
+				}
+			}
+			.page_wrapper {
+				.section1:nth-child(2) {
+					.bg {
+							.bg_1 {
+		  						top: $a510 !important;
+							}
+						}
+				}
+				.section1:nth-child(2n) {
+						.bg {
+							top: $a40;;
+							right: $a40;
+							left: -$a40;;
+							bottom: -$a40;
+							.bg_1 {
+		  						height: $a40;
+		  						width: $a130;
+		  						top: $a540;
+							}
+						}
+				}
+				.section1 {
+					margin-bottom: $a77;
+					position: relative;
+					display: flex;
+					// justify-content: space-between;
+					box-sizing: border-box;
+					padding: $a35 $a50 $a80 $a40;
+					border-radius: $a10;
+	  				background-color: rgb(255, 255, 255);
+	  				box-shadow: 0px 41px 46.5px 0px rgba(0, 4, 2, 0.65);
+	  				.bg {
+						position: absolute;
+						top: $a40;;
+						right: -$a40;
+						left: $a40;;
+						bottom: -$a40;
+						z-index: -2;
+						border-radius: $a10;
+	  					background-color: rgb(3, 125, 198);
+	  					.bg_1 {
+	  						position: absolute;
+	  						right: $a15;
+	  						top: $a35;
+	  						height: $a130;
+	  						width: $a40;
+	  						border-radius: $a6;
+	 						background-color: rgb(255, 255, 255);
+	  						box-shadow: 0px 41px 19.53px 1.47px rgba(0, 4, 2, 0.35);
+	  					}
+	  				}
+	  				.img {
+	  					margin-right: $a40;
+	  					width: $a468;
+	  					display: flex;
+	  					justify-content: space-between;
+	  					flex-flow: row wrap ;
+						.img1 {
+							img {
+								width: $a468;
+							}
+						}
+						.img2 {
+							img {
+								width: $a154;
+							}
+						}
+						.img3 {
+							img {
+								width: $a154;
+							}
+						}
+						.img4 {
+							img {
+								width: $a154;
+							}
+						}
+	  				}
+	  				.texts {
+	  					h3 {
+	  						font-size: $a24;
+	  						line-height: $a30;
+	  						font-family: 'MullerExtraBold';
+	  					}
+	  					.icons {
+	  						margin: $a22 0 $a15 0;
+	  						display: flex;
+	  						align-items: center;
+	  						.circle {
+	  							display: flex;
+	  							justify-content: center;
+	  							align-items: center;
+	  							width: $a50;
+	  							height: $a50;
+	  							border-radius: 50%;
+	  							background: #037dc6;
+	  							margin-right: $a17;
+	  							.fa {
+	  								font-size: $a24;
+	  								line-height: $a30;
+	  								color: #fff;
+	  							}
+	  						}
+	  						h4 {
+	  							font-size: $a20;
+	  							line-height: $a30;
+	  							font-family: 'MullerExtraBold';
+	  						}
+	  					}
+	  					p {
+	  						font-size: $a20;
+	  						line-height: $a32;
+	  						font-family: 'MullerRegular';
+	  						font-weight: 700;
+	  						white-space: pre-line;
+	  					}
+	  				}	
+				}
+			}
+		} 
+	}
 } 
+
+
 
