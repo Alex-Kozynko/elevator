@@ -105,3 +105,31 @@ h2 {
 .abs1, .abs2, .abs3, .abs4, .abs5, .abs6, .abs7, .abs8 {
   position: absolute;
 }
+
+.description {
+  position: absolute;
+  left: $a35;
+  bottom: $a40;
+  .number {
+    margin-bottom: $a30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $a40;
+      height: $a40;
+      border-radius: $a8;
+      background-color: rgb(3, 124, 196);
+      box-shadow: 0 $a14 $a18 0 rgba(0, 4, 2, 0.57);
+      span {
+        font-size: $a20;
+        line-height: $a24;
+        font-family: 'MullerExtraBold';
+        color: #fff;
+      }
+  }
+  p {
+    color: #fff;
+    line-height: $a24;
+    font-family: 'MullerMedium';
+  }
+}

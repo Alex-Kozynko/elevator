@@ -589,7 +589,510 @@ main {
 			}
 		} 
 	}
+	.advantage {
+		position: relative;
+		width: 100%;
+		background: url(../img/bg_slider.png) no-repeat;
+		background-size: 100%;
+		z-index: 1;
+		.vertical_text {
+			left: -$a115;
+			bottom: -$a15;
+			top: 0;
+			margin: auto;
+			position: absolute;
+			line-height: 0.7;
+		    writing-mode: vertical-lr;
+   			transform:rotate(180deg);
+   			font-size: $a240;
+   			white-space: nowrap;
+   			// text-transform: uppercase;
+    		color: #fff;
+    		font-family: 'UniNeue';
+		}
+		.container {
+			padding-top: $a95;
+			padding-bottom: $a190;
+			.profit {
+				position: relative;
+				z-index: 2;
+				display: flex;
+				justify-content: center;
+				h2 {
+					margin: 0;
+					color: #fff;
+					white-space: pre-line;
+					text-align: center;
+					line-height: $a48;
+					margin-bottom: $a145;
+				}
+			}
+			.slider {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.item {
+					position: relative;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					width: $a570;
+					height: $a300;
+					background: #fff;
+					opacity: 0;
+					transition: .5s;
+					border-radius: $a15;
+  					box-shadow: 0 $a27 $a40 0 rgba(0, 4, 2, 0.5);
+  					h3 {
+  						margin-bottom: $a45;
+  						text-align: center;
+  						text-transform: uppercase;
+  						font-size: $a30;
+  						line-height: $a36;
+  						font-family: 'MullerExtraBold';
+  					}
+  					.drops {
+  						display: flex;
+  						justify-content: center;
+  						align-items: center;
+  						border-radius: 50%;
+  						background-color: rgb(3, 124, 196);
+  						box-shadow: 0 $a17 $a38 0 rgba(0, 4, 2, 0.35);
+  						width: 89px;
+  						height: 89px;
+  						top: -$a60;
+  						z-index: 222;
+  						position: absolute;
+  					}
+  					p {
+  						white-space: pre-line;
+  						text-align: center;
+  						font-size: $a20;
+  						line-height: $a30;
+  						font-family: 'MullerMedium';
+  					}
+				}
+				.slick-active {
+					opacity: 1;
+				}
+			}
+		}	
+	}
+	.block_5 {
+		position: relative;
+		.abs1 {
+			left: 0;
+			top: $a62;
+			img {
+				width: $a187;
+			}
+		}
+		.abs2 {
+			right: 0;
+			top: $a24;
+			img {
+				width: $a133;
+			}
+		}
+		.abs3 {
+			right: $a90;
+			top: $a243;
+			img {
+				width: $a220;
+			}
+		}
+		.abs4 {
+			right: 0;
+			z-index: -1;
+			top: -$a430;
+			img {
+				width: $a642;
+			}
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: $a85 0;
+			.trust {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				h2 {
+					margin: 0;
+				}
+			}
+			.bloks {
+				width: 100%;
+				display: flex;
+				margin-top: $a70;
+				margin-bottom: $a80;
+				justify-content: space-between;
+				.banner {
+					position: relative;
+					background-color: rgb(255, 255, 255);
+					box-shadow: 0 25px 30.8px 4.2px rgba(0, 4, 2, 0.15);
+ 					width: $a260;
+  					height: $a160;
+  					border-radius: $a15;
+  					display: flex;
+  					align-items: center;
+  					justify-content: center;
+  					.border {
+  						top: -$a5;
+  						position: absolute;
+  						img {
+  							width: $a270;
+  						}
+  					}
+  					.logo {
+  						img {
+  							width: $a121;
+  						}
+  					}
+  					.logo1 {
+  						img {
+							width: $a178;
+  						}
+  					}
+  					.logo2 {
+  						img {
+							width: $a166;
+  						}
+  					}
+  					.logo3 {
+  						img {
+							width: $a118;
+  						}
+  					}
+				}
+			}
+			button {
+				cursor: pointer;
+				text-transform: uppercase;
+				padding: $a28 $a25;
+				color: #fff;
+				border: none;
+				font-size: $a16;
+				line-height: $a24;
+				border-radius: 20px;
+				font-family: 'MullerExtraBold';
+			    background-image: -webkit-linear-gradient(left, rgb(20,161,50) 0%, rgb(38,192,70) 100%);
+			    background-image: -o-linear-gradient(left, rgb(20,161,50) 0%, rgb(38,192,70) 100%);
+			    background-image: linear-gradient(to right, rgb(20,161,50) 0%, rgb(38,192,70) 100%);
+			    box-shadow: 0 3px 5px 0px rgba(32, 145, 56, 0.17);
+			}
+		}
+	}
+	.history {
+		position: relative;
+		width: 100%;
+		background: url(../img/history_bg.png) no-repeat;
+		background-size: 100%;
+		.bg_container {
+			position: absolute;
+			top: 0;
+			background-color: rgb(3, 112, 177);
+			left: 0;
+			// bottom: 0;
+			height: $a820;
+			width: $a676;
+			opacity: 0.6;
+			z-index: 1;
+		}
+		.img_abs {
+			position: absolute;
+			z-index: 2;
+			top: $a32;
+			img {
+				width: $a252;
+			}
+		}
+		.img_abs1 {
+			position: absolute;
+			z-index: 2;
+			top: $a440;
+			right: 0;
+			img {
+				width: $a218;
+			}
+		}
+		.container {
+			display: flex;
+			.people_img {
+				position: relative;
+				z-index: 2;
+				img {
+					width: $a518;
+				}
+			}
+			.content {
+				margin-left: $a90;
+				padding-top: $a86;
+				h2 {
+					margin: 0;
+					color: #fff;
+					text-transform: uppercase;
+				}
+				.name {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					margin: $a40 0 $a40 0;
+					h3 {
+						margin-bottom: $a10;
+						color: #fff;
+						text-transform: uppercase;
+  						font-size: $a30;
+  						line-height: $a36;
+  						font-family: 'MullerExtraBold';
+					}
+					p {
+						color: #b3b3b3;
+						font-family: 'MullerMedium';
+					}
+					.border {
+						margin-top: $a20;
+						width: $a106;
+						height: $a5;
+						background: #0370b1;
+					}
+				}
+				p {
+					line-height: $a30;
+					color: #fff;
+					font-family: 'MullerMedium';
+				}
+				.btm {
+					margin-bottom: $a35;
+				}
+				.list {
+					margin-top: $a25;
+					li {
+						white-space: pre-line;
+						color: #fff;
+						font-size: $a20;
+						line-height: $a30;
+						font-family: 'MullerMedium';
+						margin-bottom: $a25;
+					}
+					li:before {
+						padding:0 $a10;
+						content: "";
+						width: $a17;
+						border-radius: $a5;
+  						height: $a17;
+   						background: #0370b1;
+  						box-shadow: 0px 7px 7px 0px rgba(3, 112, 177, 0.48);
+					}
+				}
+			}
+		}
+	}
+	.portfolio {
+		width: 100%;
+		position: relative;
+		z-index: 3;
+		margin-top: -$a125;
+		background: #fff;
+		.abs1 {
+			top: -$a120;
+			left: 0;
+			img {
+				width: $a296;
+			}
+		}
+		.abs2 {
+			right: 0;
+			top: $a430;
+			img {
+				width: $a76;
+			}
+		}
+		.container {
+			padding-top: $a85;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			h2 {
+				white-space: pre-line;
+				text-align: center;
+				line-height: $a48;
+				margin: 0;
+			}
+			.wrapper {
+				position: relative;
+				margin-top: $a80;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				.blocks {
+					// display: flex;
+					// flex-direction: column;
+					// align-items: center;
+					.block_rotate {
+						position: relative;
+						transform: rotate(-45deg);
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						margin-bottom: $a30;
+						span {
+							font-size: $a90;
+							color: #037cc3;
+							// line-height: $a30;
+							font-family: 'MullerExtraBold';
+						}
+						.color {
+							color: #000000;
+						}
+						.abs {
+							position: absolute;
+							color: #000;
+							right: 4%;
+							bottom: 13%;
+							z-index: -1;
+							transform: rotate(90deg);
+						}
+						.fz {
+							font-size: $a24;
+							line-height: 3.8;
+							color: #037cc3;
+						}
+						.img {
+							margin-bottom: $a10;
+							margin-top: -$a20;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							border-radius: $a12;
+							width: $a125;
+	 						height: $a125;
+	 						background-color: rgb(255, 255, 255);
+	  						box-shadow: 0 $a22 $a51 0 rgba(0, 4, 2, 0.13);
+	  						img {
+	  							width: $a63;
+	  							transform: rotate(45deg);
+	  						}
+						}
+					}
+					p {
+						line-height: $a30;
+						text-align: center;
+						font-family: 'MullerMedium';
+						padding-left: $a50;
+					}
+				}
+				.bloks1 {
+					position: absolute;
+					right: 0;
+					margin-right: -$a250;
+				}
+			}
+		}
+	}
+	.key {
+		margin-top: $a100;
+		background: url(../img/key_bg.png) no-repeat;
+		background-size: 100%;
+		padding: $a90 $a70 $a75;
+		.container {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			h2 {
+				margin: 0;
+				text-align: center;
+				margin-bottom: $a30;
+			}
+			h3 {
+				margin-bottom: $a50;
+				text-align: center;
+				font-size: $a36;
+				line-height: $a48;
+				font-family: 'MullerExtraBold';
+				color: #037dc6;
+			}
+			h3:last-child {
+				margin-bottom: 0;
+			}
+		}
+		.wrapper {
+			width: 100%;
+			margin-top: $a40;
+			display: flex;
+			justify-content: space-between;
+			.left_img {
+				.img1 {
+					position: relative;
+					margin-bottom: $a46;
+					img {
+						width: $a867;
+					}
+				}
+				.gallery {
+					display: flex;
+					justify-content: space-between;
+					.img2 {
+						position: relative;
+						img {
+							width: $a411;
+						}
+					}
+					.gallery1 {
+						.img3 {
+							position: relative;
+							margin-bottom: $a46;
+							img {
+								width: $a411;
+							}
+						}
+						.img4 {
+							position: relative;
+							img {
+								width: $a411;
+							}
+						}
+					}
+				}
+			}
+			.right_img {
+				.gallery2 {
+					margin-bottom: $a46;
+					display: flex;
+					justify-content: space-between;
+					.gallery3 {
+						.img7 {
+							position: relative;
+							margin-bottom: $a46;
+							img {
+								width: $a411;
+							}
+						}
+						.img8 {
+							position: relative;
+							img {
+								width: $a411;
+							}
+						}
+					}
+					.img6 {
+						position: relative;
+						img {
+							width: $a411;
+						}
+					}
+				}
+				.img5 {
+					position: relative;
+					img {
+						width: $a864;
+					}
+				}
+			}
+		}
+	}
 } 
-
-
-
