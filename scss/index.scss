@@ -1143,6 +1143,265 @@ main {
 			}
 		}
 	}
+	.warranty {
+		position: relative;
+		.bg {
+			position: absolute;
+			left: -$a47;
+			z-index: -1;
+			top: -$a179;
+			img {
+				width: $a899;
+			}
+		}
+		.abs1 {
+			left: 0;
+			top: $a370;
+			img {
+				width: $a172;
+			}
+		}
+		.abs2 {
+			right: $a75;
+			top: $a140;
+			img {
+				width: $a201;
+			}
+		}
+		.abs3 {
+			right: 0;
+			top: $a360;
+			img {
+				width: $a77;
+			}
+		}
+		.container {
+			padding-top: $a120;
+			padding-bottom: $a95;
+			.title {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				h2 {
+					margin-bottom: $a35;
+				}
+				p {
+					line-height: $a30;
+					font-family: 'MullerRegular';
+				}
+				h3 {
+					text-align: center;
+					font-size: $a36;
+					line-height: $a48;
+					font-family: 'MullerExtraBold';
+					color: #037dc6;
+					white-space: pre-line;
+				}
+			}
+			.wrap {
+				margin-top: $a170;
+				display: flex;
+				justify-content: space-between;
+				.lf, .rt {
+					.block {
+						width: $a570;
+						height: $a231;
+						border-radius: $a8;
+						background-color: rgb(3, 124, 196);
+					}
+				}
+				.lf {
+					.block {
+						display: flex;
+						justify-content: center;
+						align-items: flex-end;
+						margin-bottom: $a80;
+						img {
+							width: $a360;
+						}
+					}
+					h2 {
+						font-size: $a72;
+						line-height: $a20;
+						text-align: center;
+						color: #037cc4;
+						margin-bottom: $a30;
+					}
+					p {
+						line-height: $a20;
+						font-family: 'MullerExtraBold';
+						text-align: center;
+					}
+				}
+				.rt {
+					.block {
+						display: flex;
+						justify-content: center;
+						align-items: flex-end;
+						margin-bottom: $a80;
+						img {
+							width: $a570;
+						}
+					}
+					h2 {
+						font-size: $a72;
+						line-height: $a20;
+						text-align: center;
+						color: #037cc4;
+						margin-bottom: $a30;
+					}
+					p {
+						line-height: $a20;
+						font-family: 'MullerExtraBold';
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	.save {
+		position: relative;
+		width: 100%;
+		background: url(../img/save_bg.png) no-repeat;
+		background-size: 100%;
+		z-index: 1;
+		.vertical_text {
+			text-transform: uppercase;
+			left: 0;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+			position: absolute;
+			line-height: 0.7;
+			writing-mode: vertical-lr;
+			transform:rotate(180deg);
+			font-size: $a240;
+			white-space: nowrap;
+			// text-transform: uppercase;
+			color: #fff;
+			font-family: 'UniNeue';
+		}
+		.rt {
+			right: 0;
+			font-size: $a161;
+		}
+		.container {
+			padding-bottom: $a80;
+			padding-top: $a90;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			h2 {
+				margin: 0;
+				white-space: pre-line;
+				text-align: center;
+				line-height: $a48;
+				color: #fff;
+				margin-bottom: $a105;
+			}
+			.content {
+				position: relative;
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				align-items: center;
+				margin-bottom: $a65;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				.border_dot {
+					z-index: -1;
+					top: -$a19;
+					left: $a107;
+					position: absolute;
+					border: 2px dashed #fff;
+					border-bottom: transparent;
+					width: $a729;
+				}
+				.border_dot1 {
+					// z-index: -1;
+					top: -$a19;
+					left: $a107;
+					position: absolute;
+					border: 2px dashed #fff;
+					width: $a900;
+					height: $a74;
+					border-left: transparent;
+					border-bottom: transparent;
+				}
+				.block, .block1, .block2 {
+					border-radius: $a8;
+					background-color: rgba(255, 255, 255, 0.702);
+					box-shadow: 0 $a13 $a47 $a4 rgba(0, 4, 2, 0.35);
+					.description1 {
+						padding-left: $a26;
+						.numbers {
+							margin-bottom: $a25;
+							margin-top: -$a40;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							border-radius: $a8;
+							background: #037cc3;
+							box-shadow: 0 $a18 $a32 0 rgba(0, 4, 2, 0.22);
+							width: $a81;
+							height: $a81;
+							span {
+								font-size: $a36;
+								line-height: $a30;
+								color: #fff;
+								font-family: 'MullerExtraBold';
+							}
+						}
+						p {
+							line-height: $a30;
+							font-family: 'MullerMedium';
+						}
+					}
+				}
+				.block {
+					width: $a370;
+					height: $a235;
+				}
+				.block1 {
+					width: $a370;
+					height: $a165;
+				}
+				.block2 {
+					width: $a775;
+					height: $a190;
+					.description1 {
+						p {
+							text-transform: uppercase;
+							font-family: 'MullerExtraBold';
+						}
+					}
+				}
+				.button {
+					display: flex;
+					justify-content: center;
+					width: $a370;
+					button {
+						text-transform: uppercase;
+						padding: $a26;
+						color: #fff;
+						font-family: 'MullerExtraBold';
+						font-size: $a16;
+						line-height: $a24;
+						border: none;
+						cursor: pointer;
+						border-radius: $a20;
+						background-image: -webkit-linear-gradient(left, rgb(20,161,50) 0%, rgb(38,192,70) 100%);
+						background-image: -o-linear-gradient(left, rgb(20,161,50) 0%, rgb(38,192,70) 100%);
+						background-image: linear-gradient(to right, rgb(20,161,50) 0%, rgb(38,192,70) 100%);
+						box-shadow: 0 $a3 $a5 0 rgba(32, 145, 56, 0.17);
+					}
+				}
+			}
+		}
+	}
 }
 footer {
   background: #000000;
@@ -1227,263 +1486,3 @@ footer {
     color: #ffffff;
   }
 }
-	.warranty {
-		position: relative;
-		.bg {
-			position: absolute;
-			left: -$a47;
-			z-index: -1;
-			top: -$a179;
-			img {
-				width: $a899;
-			}
-		}
-		.abs1 {
-			left: 0;
-			top: $a370;
-			img {
-				width: $a172;
-			}
-		}
-		.abs2 {
-			right: $a75;
-			top: $a140;
-			img {
-				width: $a201;
-			}
-		}
-		.abs3 {
-			right: 0;
-			top: $a360;
-			img {
-				width: $a77;
-			}
-		}
-		.container {
-			padding-top: $a120;
-			padding-bottom: $a95;
-			.title {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				width: 100%;
-				h2 {
-					margin-bottom: $a35;
-				}
-				p {
-					line-height: $a30;
-					font-family: 'MullerRegular';
-				}
-				h3 {
-					text-align: center;
-					font-size: $a36;
-					line-height: $a48;
-					font-family: 'MullerExtraBold';
-					color: #037dc6;
-					white-space: pre-line;
-				}
-			}
-			.wrap {
-				margin-top: $a170;
-				display: flex;
-				justify-content: space-between;
-				.lf, .rt {
-					.block {
-						width: $a570;
-	  					height: $a231;
-	  					border-radius: $a8;
-	  					background-color: rgb(3, 124, 196);
-	  				}
-				}
-				.lf {
-					.block {
-						display: flex;
-						justify-content: center;
-						align-items: flex-end;
-						margin-bottom: $a80;
-							img {
-								width: $a360;
-							}
-					}
-					h2 {
-						font-size: $a72;
-						line-height: $a20;
-						text-align: center;
-						color: #037cc4;
-						margin-bottom: $a30;
-					}
-					p {
-						line-height: $a20;
-						font-family: 'MullerExtraBold';
-						text-align: center;
-					}
-				}
-				.rt {
-					.block {
-						display: flex;
-						justify-content: center;
-						align-items: flex-end;
-						margin-bottom: $a80;
-						img {
-							width: $a570;
-						}
-					}
-					h2 {
-						font-size: $a72;
-						line-height: $a20;
-						text-align: center;
-						color: #037cc4;
-						margin-bottom: $a30;
-					}
-					p {
-						line-height: $a20;
-						font-family: 'MullerExtraBold';
-						text-align: center;
-					}
-				}
-			}
-		}
-	}
-	.save {
-		position: relative;
-		z-index: -2;
-		width: 100%;
-		background: url(../img/save_bg.png) no-repeat;
-		background-size: 100%;
-		.vertical_text {
-			text-transform: uppercase;
-			left: 0;
-			bottom: 0;
-			top: 0;
-			margin: auto;
-			position: absolute;
-			line-height: 0.7;
-		    writing-mode: vertical-lr;
-   			transform:rotate(180deg);
-   			font-size: $a240;
-   			white-space: nowrap;
-   			// text-transform: uppercase;
-    		color: #fff;
-    		font-family: 'UniNeue';
-		}
-		.rt {
-			right: 0;
-			font-size: $a161;
-		}
-		.container {
-			padding-bottom: $a80;
-			padding-top: $a90;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			h2 {
-				margin: 0;
-				white-space: pre-line;
-				text-align: center;
-				line-height: $a48;
-				color: #fff;
-				margin-bottom: $a105;
-			}
-			.content {
-				position: relative;
-				display: flex;
-				justify-content: space-between;
-				width: 100%;
-				align-items: center;
-				margin-bottom: $a65;
-				&:last-child {
-					margin-bottom: 0;
-				}
-				.border_dot {
-					z-index: -1;
-					top: -$a19;
-					left: $a107;
-					position: absolute;
-					border: 2px dashed #fff;
-					border-bottom: transparent;
-					width: $a729;
-				}
-				.border_dot1 {
-					// z-index: -1;
-					top: -$a19;
-					left: $a107;
-					position: absolute;
-					border: 2px dashed #fff;
-					width: $a900;
-					height: $a74;
-					border-left: transparent;
-					border-bottom: transparent;
-				}
-				.block, .block1, .block2 {
-					border-radius: $a8;
-  					background-color: rgba(255, 255, 255, 0.702);
-  					box-shadow: 0 $a13 $a47 $a4 rgba(0, 4, 2, 0.35);
-  					.description1 {
-  						padding-left: $a26;
-  						.numbers {
-  							margin-bottom: $a25;
-  							margin-top: -$a40;
-  							display: flex;
-  							align-items: center;
-  							justify-content: center;
-  							border-radius: $a8;
-  							background: #037cc3;
-  							box-shadow: 0 $a18 $a32 0 rgba(0, 4, 2, 0.22);
-  							width: $a81;
-  							height: $a81;
-  							span {
-  								font-size: $a36;
-  								line-height: $a30;
-  								color: #fff;
-  								font-family: 'MullerExtraBold';
-  							}
-  						}
-  						p {
-    						line-height: $a30;
-    						font-family: 'MullerMedium';
-  						}
-  					}
-				}
-				.block {
-					width: $a370;
-  					height: $a235;
-				}
-				.block1 {
-					width: $a370;
-  					height: $a165;
-				}
-				.block2 {
-					width: $a775;
-  					height: $a190;
-  					.description1 {
-  						p {
-  							text-transform: uppercase;
-  							font-family: 'MullerExtraBold';
-  						}
-  					}
-				}
-				.button {
-					display: flex;
-					justify-content: center;
-					width: $a370;
-					button {
-						text-transform: uppercase;
-						padding: $a26;
-						color: #fff;
-						font-family: 'MullerExtraBold';
-						font-size: $a16;
-						line-height: $a24;
-						border: none;
-						cursor: pointer;
-						border-radius: $a20;
-					    background-image: -webkit-linear-gradient(left, rgb(20,161,50) 0%, rgb(38,192,70) 100%);
-					    background-image: -o-linear-gradient(left, rgb(20,161,50) 0%, rgb(38,192,70) 100%);
-					    background-image: linear-gradient(to right, rgb(20,161,50) 0%, rgb(38,192,70) 100%);
-					    box-shadow: 0 $a3 $a5 0 rgba(32, 145, 56, 0.17);
-					}		
-				}
-			}
-		}
-	}
-} 
