@@ -1266,6 +1266,7 @@ main {
 		width: 100%;
 		background: url(../img/save_bg.png) no-repeat;
 		background-size: 100%;
+		z-index: 1;
 		.vertical_text {
 			text-transform: uppercase;
 			left: 0;
