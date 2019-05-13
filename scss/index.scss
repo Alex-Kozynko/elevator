@@ -980,9 +980,6 @@ main {
 				display: flex;
 				justify-content: space-between;
 				.blocks {
-					// display: flex;
-					// flex-direction: column;
-					// align-items: center;
 					.block_rotate {
 						position: relative;
 						transform: rotate(-45deg);
@@ -1146,4 +1143,87 @@ main {
 			}
 		}
 	}
-} 
+}
+footer {
+  background: #000000;
+  p {
+    font-size: $a16;
+  }
+  .container {
+    height: $a130;
+    display: flex;
+    align-items: center;
+    width: $a1230;
+    .logo {
+      width: $a171;
+      padding-right: $a56;
+      border-right: 1px solid rgba(231, 231, 231, 0.2);
+      padding-top: $a20;
+      padding-bottom: $a20;
+      box-sizing: content-box;
+    }
+    .name {
+      padding-left: $a56;
+      color: #ffffff;
+      line-height: $a25;
+      padding-right: $a56;
+      border-right: 1px solid rgba(231, 231, 231, 0.2);
+      height: $a92;
+      padding-top: $a20;
+    }
+    .phone_adress {
+      padding-left: $a56;
+      color: #ffffff;
+      line-height: $a25;
+      padding-right: $a56;
+      border-right: 1px solid rgba(231, 231, 231, 0.2);
+      height: $a92;
+      padding-top: $a20;
+      i {
+        padding-right: $a10;
+      }
+    }
+    .social {
+      border-right: 1px solid rgba(231, 231, 231, 0.2);
+      padding: 0 $a56;
+      height: $a92;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      .facebook {
+        border-radius: 2px;
+        width: $a20;
+        height: $a20;
+        color: #000000;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .email {
+        color: #ffffff;
+        font-size: $a20;
+        padding-top: $a15;
+      }
+    }
+    .developer {
+      padding-left: $a56;
+      color: #ffffff;
+      img {
+        width: $a123;
+        padding-top: $a15;
+      }
+    }
+  }
+  .rights {
+    height: $a38;
+    width: 100%;
+    background: #037cc3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'MullerRegular';
+    color: #ffffff;
+  }
+}
