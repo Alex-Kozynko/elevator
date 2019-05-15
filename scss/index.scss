@@ -1469,7 +1469,11 @@ main {
 			 			}
 					}
 			 			p {
-			 				padding-left: $a20;
+			 				padding: $a15 0;
+			 				border-top: 1px solid #f0f0f0;
+			 				border-bottom: 1px solid #f0f0f0;
+			 				// padding-left: $a20;
+			 				margin-left: $a20;
 			 				line-height: $a24;
 			 				font-family: 'MullerExtraBold';
 			 			}
