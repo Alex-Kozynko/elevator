@@ -1402,9 +1402,260 @@ main {
 			}
 		}
 	}
+	.reviews {
+		position: relative;
+		width: 100%;
+		background: url(../img/slider2_bg.png) no-repeat;
+		background-size: cover;
+		z-index: 1;
+		padding: $a180 0;
+		.container {
+			.slider {
+				width: 100%;
+				%arrow {
+					content: '';
+					border: 2px solid #037dc6;
+					border-left-color: transparent;
+					border-bottom-color: transparent;
+					width: $a10;
+					height: $a10;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					left: 0;
+					margin: auto;
+					opacity: 1;
+					border-radius: $a3;
+				}
+				.slick-prev, .slick-next {
+					background-color: rgb(255, 255, 255);
+					width: $a59;
+					height: $a59;
+					transform: rotate(45deg);
+					border-radius: $a15;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+					&:active {
+						box-shadow:  inset 0px 5px 10px 0px rgba(0,0,0,0.5);
+					}
+					&:before {
+						@extend %arrow;
+					}
+				}
+				.slick-next {
+					right: 0;
+					&:before {
+						right: $a5;
+						top: $a5;
+					}
+				}
+				.slick-prev {
+					left: 0;
+					&:before {
+						left: $a5;
+						bottom: $a5;
+						border: 2px solid #037dc6;
+						border-top-color: transparent;
+						border-right-color: transparent;
+					}
+				}
+				.item {
+					position: relative;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					width: 970px;
+					height: 520px;
+					background: #fff;
+					opacity: 0;
+					transition: .5s;
+					border-radius: $a15;
+					box-shadow: 0 $a28 $a32 0 rgba(0, 4, 2, 0.16);
+					h2 {
+						text-align: center;
+						line-height: $a48;
+						font-family: 'MullerExtraBold';
+						white-space: pre-line;
+						margin-bottom: 0;
+					}
+					.people {
+						display: flex;
+						align-items: flex-start;
+						padding: 0 $a65;
+						padding-top: $a40;
+						img {
+							padding-right: $a40;
+							border-radius: $a8;
+						}
+						.text {
+							.title {
+								font-family: 'MullerExtraBold';
+								font-size: $a30;
+								text-transform: uppercase;
+							}
+							.line {
+								width: $a78;
+								height: $a4;
+								background-color: rgb(3, 124, 195);
+								margin: $a25 0;
+							}
+							.text2 {
+								font-size: $a20;
+								line-height: $a30;
+								font-family: 'MullerMedium';
+								max-height: $a220;
+								overflow: auto;
+							}
+						}
+					}
+				}
+				.slick-center {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.certificate {
+		padding-top: $a90;
+		padding-bottom: $a240;
+		position: relative;
+		.bg {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+		.bg2 {
+			position: absolute;
+			right: 0;
+			bottom: $a50;
+		}
+		h2 {
+			text-align: center;
+		}
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.item {
+				border-radius: 5px;
+				box-shadow: 0 $a30 $a35 0 rgba(0, 4, 2, 0.15),inset 0 0 $a20 0 rgba(0, 4, 2, 0.64);
+				width: $a362;
+				height: $a528;
+				border: 15px solid #fff;
+				box-sizing: border-box;
+				display: flex;
+				align-items: center;
+				background-image: url(/img/certificate1.png);
+				background-size: cover;
+				background-position: center center;
+				position: relative;
+				margin: auto $a15;
+				.name {
+					position: absolute;
+					top: 110%;
+					left: 0;
+					right: 0;
+					text-align: center;
+					font-size: $a20;
+					line-height: $a30;
+					font-family: 'MullerMedium';
+				}
+				&:nth-child(2) {
+					background: url(/img/certificate2.png);
+				}
+				&:nth-child(3) {
+					background: url(/img/certificate3.png);
+				}
+			}
+		}
+	}
+	.answer {
+		background: url(/img/answer_bg.png);
+		background-size: cover;
+		padding-top: $a70;
+		.container {
+			display: flex;
+			justify-content: flex-end;
+			padding-bottom: $a85;
+			.right {
+				width: 50%;
+				.title {
+					font-family: 'MullerRegular';
+					text-transform: uppercase;
+					font-size: $a72;
+				}
+				.under {
+					font-size: $a20;
+					font-family: 'MullerMedium';
+					line-height: $a30;
+					padding-bottom: $a25;
+				}
+				form {
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					align-items: flex-start;
+					width: $a370;
+					input {
+						border-style: solid;
+						border-width: 1px;
+						border-color: rgb(235, 235, 235);
+						border-radius: $a8;
+						background-color: rgb(255, 255, 255);
+						width: $a374;
+						height: $a82;
+						margin-bottom: $a5;
+						display: flex;
+						align-items: center;
+						box-sizing: border-box;
+						padding-left: $a33;
+						font-size: $a20;
+						line-height: $a30;
+						font-family: 'MullerMedium';
+					}
+					i {
+						position: absolute;
+						right: $a25;
+						top: 0;
+						bottom: 0;
+						display: flex;
+						align-items: center;
+						font-size: $a25;
+						color: #037cc3;
+					}
+					div {
+						position: relative;
+					}
+					div~input {
+						height: $a150;
+						margin-bottom: $a23;
+					}
+					button {
+						border-radius: 20px;
+						background-image: linear-gradient(90deg, rgb(20, 161, 50) 0%, rgb(38, 192, 70) 100%);
+						box-shadow: 0px 3px 5px 0px rgba(32, 145, 56, 0.17);
+						width: $a370;
+						height: $a85;
+						font-family: 'MullerExtraBold';
+						color: #ffffff;
+						font-size: $a16;
+						text-transform: uppercase;
+						border: none;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
 }
 footer {
-  background: #000000;
+  background: #1a1f23;
   p {
     font-size: $a16;
   }
