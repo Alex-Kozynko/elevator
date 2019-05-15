@@ -134,3 +134,10 @@ h2 {
     font-family: 'MullerMedium';
   }
 }
+
+button {
+  cursor: pointer;
+  &:active {
+    box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.5) !important;
+  }
+}
