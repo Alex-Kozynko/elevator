@@ -1403,6 +1403,80 @@ main {
 			}
 		}
 	}
+	.questions {
+		width: 100%;		
+		position: relative;
+		height: $a670;
+		.abs1 {
+			top: $a47;
+			left: 0;
+			img {
+				width: $a151;
+			}
+		}
+		.abs2 {
+			top: $a260;
+			left: $a150;
+			img {
+				width: $a133;
+			}
+		}
+		.abs3 {
+			top: -$a80;
+			right: 0;
+			img {
+				width: $a241;
+			}
+		}
+		.abs4 {
+			top: -$a156;
+			right: 0;
+			img {
+				width: $a723;
+			}
+		}
+		.container {
+			padding-top: $a100;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			h2 {
+				margin: 0;
+				margin-bottom: $a70;
+				text-align: center;
+			}
+			.text {
+				display: flex;
+				width: 100%;
+				flex-flow: row wrap;
+				.floating {
+					align-items: center;
+					width: 50%;
+					display: flex;
+					margin-bottom: $a30;
+					.plus {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: $a78;
+			 			height: $a78;
+			 			border-radius: $a8;
+			 			background-color: rgb(3, 124, 195);
+			 			.fa {
+			 				font-size: $a20;
+			 				line-height: $a24;
+			 				color: #fff;
+			 			}
+					}
+			 			p {
+			 				padding-left: $a20;
+			 				line-height: $a24;
+			 				font-family: 'MullerExtraBold';
+			 			}
+				}
+			}
+		}
+	}
 }
 footer {
   background: #000000;
