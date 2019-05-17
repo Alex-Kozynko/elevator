@@ -1,4 +1,5 @@
 @import "_pxTOvw.scss";
+@import "animate";
 
 $osn-col: #037dc6;
 $osn-col2: #ffa418;
@@ -94,7 +95,24 @@ h2 {
   line-height: $a36;
   font-family: 'MullerExtraBold';
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
   margin-bottom: $a50;
+  img:nth-of-type(1) {
+    position: absolute;
+    right: calc(100% + #{$a40});
+    bottom: -$a8;
+    width: $a154;
+  }
+  img:nth-of-type(2) {
+    position: absolute;
+    left: calc(100% + #{$a40});
+    bottom: -$a8;
+    width: $a154;
+  }
 }
 
 .container {
@@ -139,5 +157,43 @@ button {
   cursor: pointer;
   &:active {
     box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.5) !important;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .container {
+    width: 95% !important;
+  }
+  h2, h3 ,h4 {
+    line-height: initial !important;
+    font-size: $m20 !important;
+    white-space: normal !important;
+    text-align: center !important;
+    padding-left: $m5 !important;
+    padding-right: $m5 !important;
+    br {
+      display: none !important;
+    }
+    img {
+      display: none !important;
+    }
+    span {
+      font-size: $m10 !important;
+    }
+  }
+  p {
+    line-height: initial !important;
+    font-size: $m14 !important;
+    white-space: normal !important;
+  }
+  button, .button {
+    width: $m250 !important;
+    height: $m40 !important;
+    box-sizing: border-box;
+    font-size: $m14 !important;
+  }
+  li {
+    font-size: $m14 !important;
+    line-height: initial !important;
   }
 }
