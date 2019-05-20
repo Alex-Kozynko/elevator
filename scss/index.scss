@@ -205,6 +205,10 @@ main {
 						border-radius: $a12;
 						width: $a300;
 						box-shadow: 0 $a19 $a5 0 rgba(45, 3, 3, 0.6);
+						animation-name: pulse;
+						animation-duration: 1s;
+						animation-timing-function: linear;
+						animation-iteration-count: infinite;
 						h3 {
 							text-align: center;
 							text-transform: uppercase;
@@ -305,6 +309,10 @@ main {
 					width: $a350;
 					background-color: rgb(237, 20, 20);
  					box-shadow: 0 $a19 $a38 0 rgba(237, 20, 20, 0.6);
+					animation-name: pulse;
+					animation-duration: 1s;
+					animation-timing-function: linear;
+					animation-iteration-count: infinite;
 					h4 {
 						text-align: center;
 						text-transform: uppercase;
@@ -336,14 +344,14 @@ main {
 		background-size: 100%;
 		.vertical_text {
 			left: 0;
-			bottom: 0;
+			bottom: -$a18;
 			top: 0;
 			margin: auto;
 			position: absolute;
 			line-height: 0.7;
 		    writing-mode: vertical-lr;
    			transform:rotate(180deg);
-   			font-size: $a240;
+   			font-size: $a232;
    			white-space: nowrap;
    			// text-transform: uppercase;
     		color: #fff;
@@ -475,6 +483,8 @@ main {
 				}
 			}
 			.page_wrapper {
+				position: relative;
+				z-index: 1;
 				.section1:nth-child(2) {
 					.bg {
 							.bg_1 {
@@ -483,54 +493,32 @@ main {
 						}
 				}
 				.section1:nth-child(2n) {
-						.bg {
-							top: $a40;;
-							right: $a40;
-							left: -$a40;;
-							bottom: -$a40;
-							.bg_1 {
-		  						height: $a40;
-		  						width: $a130;
-		  						top: $a540;
-							}
-						}
+                  box-shadow: 0px 41px 46.5px 0px rgba(0, 4, 2, 0.65), $a40 $a40 0 0 rgb(3, 125, 198);
 				}
 				.section1 {
 					margin-bottom: $a77;
 					position: relative;
 					display: flex;
-					// justify-content: space-between;
 					box-sizing: border-box;
 					padding: $a35 $a50 $a80 $a40;
 					border-radius: $a10;
 	  				background-color: rgb(255, 255, 255);
-	  				box-shadow: 0px 41px 46.5px 0px rgba(0, 4, 2, 0.65);
-	  				.bg {
-						position: absolute;
-						top: $a40;;
-						right: -$a40;
-						left: $a40;;
-						bottom: -$a40;
-						z-index: -2;
-						border-radius: $a10;
-	  					background-color: rgb(3, 125, 198);
-	  					.bg_1 {
-	  						position: absolute;
-	  						right: $a15;
-	  						top: $a35;
-	  						height: $a130;
-	  						width: $a40;
-	  						border-radius: $a6;
-	 						background-color: rgb(255, 255, 255);
-	  						box-shadow: 0px 41px 19.53px 1.47px rgba(0, 4, 2, 0.35);
-	  					}
-	  				}
+	  				box-shadow: 0px 41px 46.5px 0px rgba(0, 4, 2, 0.65), -$a40 $a40 0 0 rgb(3, 125, 198);
+					z-index: auto;
+
 	  				.img {
 	  					margin-right: $a40;
 	  					width: $a468;
 	  					display: flex;
 	  					justify-content: space-between;
 	  					flex-flow: row wrap ;
+						a {
+							display: flex;
+							padding-bottom: $a5;
+						}
+						img {
+							border-radius: 5px;
+						}
 						.img1 {
 							img {
 								width: $a468;
@@ -599,7 +587,7 @@ main {
 		position: relative;
 		width: 100%;
 		background: url(../img/bg_slider.png) no-repeat;
-		background-size: 100%;
+		background-size: 100% 100%;
 		z-index: 1;
 		.vertical_text {
 			left: -$a115;
@@ -692,20 +680,24 @@ main {
 						border-right-color: transparent;
 					}
 				}
+				.slick-track {
+					margin: $a145 0;
+					display: flex;
+					align-items: center;
+				}
 				.item {
 					position: relative;
 					display: flex;
 					align-items: center;
 					justify-content: center;
 					flex-direction: column;
-					width: $a570;
-					height: $a300;
+					padding: $a60;
+					min-width: $a570;
 					background: #fff;
 					opacity: 0;
 					transition: .5s;
 					border-radius: $a15;
   					box-shadow: 0 $a27 $a40 0 rgba(0, 4, 2, 0.5);
-					margin: $a145 0;
   					h3 {
   						margin-bottom: $a45;
   						text-align: center;
@@ -713,6 +705,7 @@ main {
   						font-size: $a30;
   						line-height: $a36;
   						font-family: 'MullerExtraBold';
+						white-space: pre-line;
   					}
   					.drops {
   						display: flex;
@@ -895,6 +888,9 @@ main {
 			.content {
 				margin-left: $a90;
 				padding-top: $a86;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
 				h2 {
 					margin: 0;
 					color: #fff;
@@ -941,10 +937,14 @@ main {
 						line-height: $a30;
 						font-family: 'MullerMedium';
 						margin-bottom: $a25;
-						display: flex;
+						position: relative;
+						padding-left: $a30;
 						&:before {
 							content: "";
-							min-width: $a17;
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: $a17;
 							display: flex;
 							transform: rotate(45deg);
 							margin-top: $a6;
@@ -1297,7 +1297,7 @@ main {
 		.vertical_text {
 			text-transform: uppercase;
 			left: 0;
-			bottom: 0;
+			bottom: -$a20;
 			top: 0;
 			margin: auto;
 			position: absolute;
@@ -1496,11 +1496,6 @@ main {
 								transform: rotate(405deg);
 							}
 						}
-						p {
-							span {
-								padding-top: $a15;
-							}
-						}
 					}
 					.plus {
 						display: flex;
@@ -1542,7 +1537,7 @@ main {
 							width: 100%;
 							font-family: 'MullerMedium';
 							display: block;
-							transition: padding 0.5s;
+							padding-top: $a15;
 						}
 					}
 				}
@@ -1683,6 +1678,9 @@ main {
 		padding-top: $a90;
 		padding-bottom: $a240;
 		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		.bg {
 			position: absolute;
 			bottom: 0;
@@ -1709,7 +1707,7 @@ main {
 				box-sizing: border-box;
 				display: flex;
 				align-items: center;
-				background-image: url(/img/certificate1.png);
+				background-image: url(../img/certificate1.png);
 				background-size: cover;
 				background-position: center center;
 				position: relative;
@@ -1725,18 +1723,19 @@ main {
 					font-family: 'MullerMedium';
 				}
 				&:nth-child(2) {
-					background-image: url(/img/certificate2.png);
+					background-image: url(../img/certificate2.png);
 				}
 				&:nth-child(3) {
-					background-image: url(/img/certificate3.png);
+					background-image: url(../img/certificate3.png);
 				}
 			}
 		}
 	}
 	.answer {
-		background: url(/img/answer_bg.png);
+		background: url(../img/answer_bg.png);
 		background-size: cover;
 		padding-top: $a70;
+		background-position: center center;
 		.container {
 			display: flex;
 			justify-content: flex-end;
@@ -1744,9 +1743,12 @@ main {
 			.right {
 				width: 50%;
 				.title {
-					font-family: 'MullerRegular';
+					font-family: 'MullerExtraBold';
 					text-transform: uppercase;
 					font-size: $a72;
+					span {
+						color: #037cc3;
+					}
 				}
 				.under {
 					font-size: $a20;
@@ -1868,11 +1870,19 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.5s;
+        &:hover {
+          background: $osn-col;
+        }
       }
       .email {
         color: #ffffff;
         font-size: $a20;
         padding-top: $a15;
+        transition: all 0.5s;
+        &:hover {
+          color: $osn-col;
+        }
       }
     }
     .developer {
@@ -2122,7 +2132,7 @@ footer {
 		.section1 {
 			padding: $m10;
 			flex-direction: column;
-			width: 95vw;
+			width: 97vw;
 			box-shadow: 0 $m5 $m7 0 rgba(0,4,2,0.65);
 			max-height: 85vh;
 			overflow: auto;
@@ -2172,6 +2182,12 @@ footer {
 				width: $m5;
 				height: $m5;
 			}
+		}
+		.slick-next {
+			right: -$m16;
+		}
+		.slick-prev {
+			left: -$m16;
 		}
 		.item {
 			width: 90vw;
@@ -2237,15 +2253,24 @@ footer {
 					text-align: center;
 					justify-content: center;
 					align-items: center;
+					width: 100%;
 				}
-				li {
-					text-align: left;
-					margin-bottom: $m15;
-					&:before {
-						min-width: $m10 !important;
-						height: $m10 !important;
-						margin-right: $m10 !important;
-						margin-top: $m10 !important;
+				&>p:last-of-type {
+					margin: $m10 0;
+					text-align: center;
+					width: 100%;
+				}
+				.list {
+					li {
+						text-align: left;
+						margin-bottom: $m15;
+						padding-left: $m20;
+						&:before {
+							min-width: $m10;
+							height: $m10;
+							margin-top: $m2;
+							margin-right: 0;
+						}
 					}
 				}
 			}
@@ -2326,6 +2351,18 @@ footer {
 	}
 	main .key {
 		background-size: cover;
+		.container {
+			margin-bottom: $m40;
+			h2 {
+				margin-bottom: $m20;
+			}
+			h3 {
+				text-align: right !important;
+			}
+			h3:last-child {
+				text-align: left !important;
+			}
+		}
 		.wrapper {
 			flex-direction: column;
 			img {
@@ -2354,6 +2391,7 @@ footer {
 				flex-direction: column;
 				display: flex;
 				.img1 {
+					margin-bottom: 0;
 					.description {
 						.number {
 							&:before {
