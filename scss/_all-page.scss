@@ -1,5 +1,6 @@
 @import "_pxTOvw.scss";
 @import "animate";
+@import "jquery.fancybox.min";
 
 $osn-col: #037dc6;
 $osn-col2: #ffa418;
@@ -90,13 +91,16 @@ body {
   }
 }
 
+.fix_letter {
+  font-family: 'myriadpro_bold';
+  font-style: normal;
+}
+
 h2 {
   font-size: $a46;
   line-height: $a36;
   font-family: 'MullerExtraBold';
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
   position: relative;
   width: fit-content;
   margin: 0 auto;
