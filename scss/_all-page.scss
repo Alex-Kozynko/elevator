@@ -130,25 +130,30 @@ h2 {
 
 .description {
   position: absolute;
-  left: $a35;
-  bottom: $a40;
+  left: 0;
+  bottom: 0;
+  padding-left: $a35;
+  padding-bottom: $a40;
+  background: linear-gradient(0deg, rgba(44,65,77,1), rgba(44,65,77,0.3));
+  width: 100%;
   .number {
-    margin-bottom: $a30;
+    margin-top: -$a20;
     display: flex;
     justify-content: center;
     align-items: center;
     width: $a40;
-      height: $a40;
-      border-radius: $a8;
-      background-color: rgb(3, 124, 196);
-      box-shadow: 0 $a14 $a18 0 rgba(0, 4, 2, 0.57);
-      span {
-        font-size: $a20;
-        line-height: $a24;
-        font-family: 'MullerExtraBold';
-        color: #fff;
-        margin-top: $a3;
-      }
+    height: $a40;
+    margin-bottom: $a20;
+    border-radius: $a8;
+    background-color: rgb(3, 124, 196);
+    box-shadow: 0 $a14 $a18 0 rgba(0, 4, 2, 0.57);
+    span {
+      font-size: $a20;
+      line-height: $a24;
+      font-family: 'MullerExtraBold';
+      color: #fff;
+      margin-top: $a3;
+    }
   }
   p {
     color: #fff;
