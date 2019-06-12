@@ -227,16 +227,26 @@
 
 /* BOX-SHADOW */
 
-  @keyframes aboxShadowPulse {
+  @keyframes boxShadowPulse {
     0%{}
     50%{box-shadow: 0 0 0;}
     100%{}
   }
 
   .boxShadowPulse {
-    animation-name: boxShadowPulse;
+    animation-name: boxShadow;
     animation-iteration-count: infinite;
   }
+
+@keyframes aboxShadowPulse {
+  0%{box-shadow: 0 0 0;}
+  100%{}
+}
+
+.boxShadow {
+  animation-name: boxShadow;
+  animation-duration: 1s;
+}
 
 /* BOX-SHADOW */
 
