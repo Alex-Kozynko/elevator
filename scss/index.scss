@@ -300,6 +300,11 @@ main {
 					line-height: $a32;
 					color: #000000;
 					white-space: pre-line;
+					.fix_letter {
+						font-family: 'OpenSans-SemiBold';
+						font-style: normal;
+						font-size: $a18;
+					}
 					.color {
 						text-transform: uppercase;
 						color: #ed1414;
@@ -636,9 +641,18 @@ main {
 	.advantage {
 		position: relative;
 		width: 100%;
-		background: url(../img/bg_slider.png) no-repeat;
+		background: url(../img/bg_slider0.jpg) no-repeat;
 		background-size: 100% 100%;
 		z-index: 1;
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			background: linear-gradient(180deg, rgba(0,25,40,0.9) , rgba(0,0,0,0));
+			content: '';
+			width: 100%;
+		}
 		.vertical_text {
 			left: -$a60;
 			bottom: -$a25;
@@ -1021,6 +1035,11 @@ main {
 		z-index: 3;
 		margin-top: -$a125;
 		background: #fff;
+		.fix_letter {
+			font-family: 'OpenSans-SemiBold';
+			font-style: normal;
+			font-size: $a18 !important;
+		}
 		.abs1 {
 			top: -$a120;
 			left: 0;
@@ -1218,6 +1237,9 @@ main {
 				}
 				.img5 {
 					position: relative;
+					.description {
+						background: none;
+					}
 					img {
 						width: $a864;
 					}
@@ -1462,10 +1484,20 @@ main {
 				.block {
 					width: $a370;
 					height: $a235;
+					.fix_letter {
+						font-family: 'OpenSans-SemiBold';
+						font-size: $a18;
+						font-style: normal;
+					}
 				}
 				.block1 {
 					width: $a370;
 					height: $a165;
+					.fix_letter {
+						font-family: 'OpenSans-SemiBold';
+						font-size: $a18;
+						font-style: normal;
+					}
 				}
 				.block2 {
 					width: $a775;
@@ -1605,6 +1637,11 @@ main {
 							font-family: 'MullerMedium';
 							display: block;
 							padding-top: $a15;
+							.fix_letter {
+								font-family: 'OpenSans-SemiBold';
+								font-size: $a18;
+								font-style: normal;
+							}
 						}
 					}
 				}
@@ -1991,12 +2028,21 @@ footer {
       .email {
         color: #ffffff;
         font-size: $a20;
-        padding-top: $a15;
+        padding-top: $a10;
         transition: all 0.5s;
         &:hover {
           color: $osn-col;
         }
       }
+		.youtube {
+			color: #ffffff;
+			font-size: $a20;
+			padding-top: $a10;
+			transition: all 0.5s;
+			&:hover {
+				color: $osn-col;
+			}
+		}
     }
     .developer {
       padding-left: $a56;
