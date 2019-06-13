@@ -641,9 +641,10 @@ main {
 	.advantage {
 		position: relative;
 		width: 100%;
-		background: url(../img/bg_slider0.jpg) no-repeat;
+		background: url(../img/bg_slider0.jpg), url(../img/bg_slider1.jpg), url(../img/bg_slider2.jpg), url(../img/bg_slider3.jpg) no-repeat;
 		background-size: 100% 100%;
 		z-index: 1;
+		transition: all 0.5s;
 		&:before {
 			position: absolute;
 			top: 0;
@@ -2218,14 +2219,16 @@ footer {
 						display: none;
 					}
 					.item1 {
-						width: 80%;
+						width: 70%;
 						position: static;
 						text-align: center;
 						margin: $m20 auto;
 						margin-bottom: $m40;
 						padding: $m10 0;
 						h4 {
-							line-height: $m25 !important;
+							line-height: $m20 !important;
+							font-size: $m16 !important;
+							padding-bottom: $m5;
 						}
 					}
 				}
@@ -3054,5 +3057,8 @@ footer {
 			font-size: $m14;
 			margin-top: $m10;
 		}
+	}
+	main .block1 .block_rgt .bg .bg_w {
+		display: none;
 	}
 }
