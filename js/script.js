@@ -29,9 +29,9 @@ if ( $(window).width() < 999 ) {
 };
 
 if ( $(window).width() > 999 ) {
-	/*$('.advantage .slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.advantage').css('background-image', 'url(img/bg_slider'+nextSlide+'.png)');
-	});*/
+	$('.advantage .slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		$('.advantage').css('background-image', 'url(img/bg_slider'+nextSlide+'.jpg)');
+	});
 	$('.reviews .slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.reviews').css('background-image', 'url(img/slider2_bg'+nextSlide+'.png)');
 	});
