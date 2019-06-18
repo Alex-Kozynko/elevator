@@ -1036,11 +1036,6 @@ main {
 		z-index: 3;
 		margin-top: -$a125;
 		background: #fff;
-		.fix_letter {
-			font-family: 'OpenSans-SemiBold';
-			font-style: normal;
-			font-size: $a18 !important;
-		}
 		.abs1 {
 			top: -$a120;
 			left: 0;
@@ -1081,6 +1076,11 @@ main {
 				width: 100%;
 				display: flex;
 				justify-content: space-between;
+				.fix_letter {
+					font-family: 'OpenSans-SemiBold';
+					font-style: normal;
+					font-size: $a18 !important;
+				}
 				.blocks {
 					.block_rotate {
 						position: relative;
