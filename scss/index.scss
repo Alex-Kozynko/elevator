@@ -1494,6 +1494,7 @@ main {
 				.block1 {
 					width: $a370;
 					height: $a165;
+					background-image: none;
 					.fix_letter {
 						font-family: 'OpenSans-SemiBold';
 						font-size: $a18;
@@ -2825,6 +2826,10 @@ footer {
 			.title {
 				p {
 					margin-bottom: $m20;
+					text-align: center;
+				}
+				h3 {
+					font-size: $m16 !important;
 				}
 			}
 			.wrap {
