@@ -2655,8 +2655,8 @@ footer {
 		}
 		.wrapper {
 			overflow: auto;
-			margin-bottom: -$m10;
-			padding-left: $m10;
+			
+			padding: $m20;
 			img {
 				min-height: 100% !important;
 				min-width: 100% !important;
@@ -2689,7 +2689,7 @@ footer {
 					font-size: $m12 !important;
 					.fix_letter {
 						font-family: 'OpenSans-SemiBold';
-						font-size: $m10;
+						font-size: $m11;
 						display: inline-block;
 					}
 				}
