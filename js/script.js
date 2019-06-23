@@ -34,4 +34,9 @@ if ( $(window).width() < 999 ) {
 	});
 	$('.reviews .slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.reviews').css('background-image', 'url(img/slider2_bg'+nextSlide+'.png)');
+		if (nextSlide === 3) {
+			$('.reviews').css("background-position", "55% 0%");
+		} else {
+			$('.reviews').css("background-position", "0% 0%");
+		}
 	});
