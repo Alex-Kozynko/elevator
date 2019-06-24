@@ -1657,7 +1657,7 @@ main {
     background-size: cover;
     z-index: 1;
     padding: $a180 0;
-    transition: all 0.5s;
+    transition: all 0.5s, background-position 0s;
     .container {
       .slider {
         width: 100%;
@@ -2832,6 +2832,7 @@ footer {
 					}
 					img {
 						width: $m200 !important;
+						height: auto !important;
 					}
 				}
 				.img5 {
