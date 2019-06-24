@@ -2839,6 +2839,9 @@ footer {
 				}
 				.img5 {
 					justify-content: flex-end;
+					img {
+						margin-right: -$m132;
+					}
 					p {
 						width: 100%;
 					}
