@@ -28,6 +28,12 @@ if ( $(window).width() < 999 ) {
 	});
 };
 
+let scroll = $("main .key .wrapper .img1").width() + $("main .key .wrapper .img1").width()/14;
+$("main .key .wrapper").click(function () {
+
+	$("main .key .wrapper").animate({scrollLeft: scroll}, 500);
+})
+
 
 	$('.advantage .slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.advantage').css('background-image', 'url(img/bg_slider'+nextSlide+'.jpg)');
