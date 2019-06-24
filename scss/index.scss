@@ -2421,6 +2421,7 @@ footer {
 	main .advantage {
 		background-size: cover;
 		background-position: 100% 0;
+		transition: all 0.5s, background-size 0s;
 		.container .slider {
 			.slick-prev, .slick-next {
 				width: $m30 !important;
